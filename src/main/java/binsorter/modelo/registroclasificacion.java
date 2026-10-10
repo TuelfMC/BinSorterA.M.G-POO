@@ -1,3 +1,4 @@
+package binsorter.modelo;
 
 import java.sql.Time;
 

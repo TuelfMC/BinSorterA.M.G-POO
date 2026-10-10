@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class residuo {
     private int idResiduo;
     private String nombre;

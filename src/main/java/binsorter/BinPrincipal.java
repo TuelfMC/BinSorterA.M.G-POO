@@ -1,3 +1,5 @@
+package binsorter;
+import binsorter.modelo.usuario;
 import java.util.Scanner;
 public class BinPrincipal {
     public static void main(String[] args) {

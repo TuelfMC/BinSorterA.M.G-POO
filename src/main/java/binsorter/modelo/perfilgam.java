@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class perfilgam {
     private int idPuntuacion;
     private int puntosTotales;

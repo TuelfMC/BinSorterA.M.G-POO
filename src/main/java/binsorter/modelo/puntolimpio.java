@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class puntolimpio{
     private int idPunto;
     private String ubicacion;

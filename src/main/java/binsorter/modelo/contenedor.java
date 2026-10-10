@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class contenedor {
     private int idContenedor;
     private String tipoResiduo;

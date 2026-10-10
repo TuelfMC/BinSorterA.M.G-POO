@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class rango {
     private int idRango;
     private String nombreRango;

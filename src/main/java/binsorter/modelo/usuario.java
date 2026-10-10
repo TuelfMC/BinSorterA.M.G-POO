@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class usuario {
     private String id;
     private String nombre;

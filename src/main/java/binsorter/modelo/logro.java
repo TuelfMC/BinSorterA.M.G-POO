@@ -1,3 +1,5 @@
+package binsorter.modelo;
+
 public class logro {
     private int idLogro;
     private String titulo;
