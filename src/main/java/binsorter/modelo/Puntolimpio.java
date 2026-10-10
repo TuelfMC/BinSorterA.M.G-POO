@@ -1,12 +1,12 @@
 package binsorter.modelo;
 
-public class puntolimpio{
+public class Puntolimpio{
     private int idPunto;
     private String ubicacion;
     private String horarioAtencion;
     private String estado;
 
-    public puntolimpio(int idPunto, String ubucacion, String horarioAtencion, String estado){
+    public Puntolimpio(int idPunto, String ubucacion, String horarioAtencion, String estado){
         this.idPunto = idPunto;
         this.ubicacion = ubucacion;
         this.horarioAtencion = horarioAtencion;
