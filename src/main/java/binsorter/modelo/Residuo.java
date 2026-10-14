@@ -1,14 +1,12 @@
 package binsorter.modelo;
 
 public class Residuo {
-    private int idResiduo;
     private String nombre;
     private String descripcion;
     private String categoria;
     private boolean esReciclable;
 
-    public Residuo(int idResiduo, String nombre,String descripcion, String Categoria, boolean esReciclable){
-        this.idResiduo = idResiduo;
+    public Residuo(String nombre,String descripcion, String Categoria, boolean esReciclable){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.categoria = categoria;
