@@ -1,19 +1,28 @@
 package binsorter.modelo;
 
 public class rango {
-    private int idRango;
-    private String nombreRango;
-    private int puntosMinimos;
-    private int puntosMaximos;
 
-    public rango(int idRango, String nombreRango, int puntosMinimos, int puntosMaximos){
-        this.idRango = idRango;
-        this.nombreRango = nombreRango;
-        this.puntosMinimos = puntosMinimos;
-        this.puntosMaximos = puntosMaximos;
+    private double cantidadActual;
+    private double capacidadMaxima;
+
+    public rango(double cantidadActual, double capacidadMaxima) {
+        this.cantidadActual = cantidadActual;
+        this.capacidadMaxima = capacidadMaxima;
     }
 
-    public void verificarElegibilidad(){}
-    public void obtenerBenficios(){}
-    
+    public String calcularRango() {
+        double porcentaje = (cantidadActual / capacidadMaxima) * 100;
+
+        if (porcentaje < 30) {
+            return "Bajo";
+        } else if (porcentaje < 70) {
+            return "Medio";
+        } else {
+            return "Alto";
+        }
+    }
+
+    public void mostrarRango() {
+        System.out.println("Nivel del contenedor: " + calcularRango());
+    }
 }

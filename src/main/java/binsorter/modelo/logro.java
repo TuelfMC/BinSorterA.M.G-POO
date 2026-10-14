@@ -1,18 +1,25 @@
 package binsorter.modelo;
 
 public class logro {
-    private int idLogro;
     private String titulo;
     private String descripçion;
     private double requisitoKg;
+    private boolean cantidadActual;
 
-    public logro(int idLogro, String titulo, String descripcion, double requisitoKg){
-        this.idLogro = idLogro;
+    public logro(String titulo, String descripcion, double requisitoKg){
         this.titulo = titulo;
         this.descripçion = descripcion;
         this.requisitoKg = requisitoKg;
     }
 
-    public void evaluarCumplimiento(){}
-    public void desbloquear(){}
+    public void evaluarCumplimiento(){
+        if (cantidadActual == true) {
+            desbloquear();
+        }
+    }
+
+    public void desbloquear(){
+        cantidadActual = true;
+        System.out.println("¡Logro desbloqueado: " + titulo + "!");
+    }
 }
