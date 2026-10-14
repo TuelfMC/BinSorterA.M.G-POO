@@ -4,7 +4,7 @@ public class Perfilgam {
     private int idPuntuacion;
     private int puntosTotales;
     private int puntosAcumulados;
-    private float totalKgClasificados;
+    private double totalKgClasificados;
 
     public Perfilgam(int idPuntuacion, int puntosTotales, int puntosAcumulados, float totalKgClasificados) {
         this.idPuntuacion = idPuntuacion;
