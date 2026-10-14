@@ -1,11 +1,11 @@
 package binsorter.modelo;
 
-public class perfilgam {
+public class Perfilgam {
     private int puntosTotales;
     private int puntosAcumulados;
     private float totalKgClasificados;
 
-    public perfilgam(int puntosTotales, int puntosAcumulados, float totalKgClasificados) {
+    public Perfilgam(int puntosTotales, int puntosAcumulados, float totalKgClasificados) {
         this.puntosTotales = puntosTotales;
         this.puntosAcumulados = puntosAcumulados;
         this.totalKgClasificados = totalKgClasificados;

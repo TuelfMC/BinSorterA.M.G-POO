@@ -1,12 +1,12 @@
 package binsorter.modelo;
 
-public class registroclasificacion {
+public class Registroclasificacion {
 
     private String nombreResiduo;
     private String tipoResiduo;
     private String contenedor;
 
-    public registroclasificacion(String nombreResiduo) {
+    public Registroclasificacion(String nombreResiduo) {
         this.nombreResiduo = nombreResiduo;
         clasificarResiduo();
     }

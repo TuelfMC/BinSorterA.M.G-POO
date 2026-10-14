@@ -1,13 +1,13 @@
 package binsorter.modelo;
 
-public class usuario {
+public class Usuario {
     private String id;
     private String nombre;
     private String email;
     private String contraseña;
     private String rol;
 
-    public usuario(String id, String nombre, String email, String contraseña, String rol){
+    public Usuario(String id, String nombre, String email, String contraseña, String rol){
         this.id = id;
         this.nombre = nombre;
         this.email = email;

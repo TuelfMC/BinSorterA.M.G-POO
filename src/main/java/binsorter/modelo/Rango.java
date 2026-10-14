@@ -1,11 +1,11 @@
 package binsorter.modelo;
 
-public class rango {
+public class Rango {
 
     private double cantidadActual;
     private double capacidadMaxima;
 
-    public rango(double cantidadActual, double capacidadMaxima) {
+    public Rango(double cantidadActual, double capacidadMaxima) {
         this.cantidadActual = cantidadActual;
         this.capacidadMaxima = capacidadMaxima;
     }

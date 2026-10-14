@@ -2,12 +2,12 @@ package binsorter.modelo;
 
 import java.util.Scanner;
 
-public class puntolimpio {
+public class Puntolimpio {
 
     private String nombre;
     private String ubicacion;
 
-    public puntolimpio(String nombre, String ubicacion) {
+    public Puntolimpio(String nombre, String ubicacion) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
     }
