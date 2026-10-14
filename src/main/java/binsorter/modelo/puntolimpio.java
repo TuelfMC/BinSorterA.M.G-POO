@@ -3,7 +3,6 @@ package binsorter.modelo;
 import java.util.Scanner;
 
 public class Puntolimpio {
-
     private String nombre;
     private String ubicacion;
 
@@ -18,9 +17,7 @@ public class Puntolimpio {
         System.out.println("Ubicacion: " + ubicacion);
     }
 
-    public void clasificarResiduo() {
-        Scanner sc = new Scanner(System.in);
-
+    public void clasificarResiduo(Scanner sc) {
         System.out.println("\nSeleccione el residuo:");
         System.out.println("1. Botella plastica");
         System.out.println("2. Residuo organico");
@@ -28,29 +25,32 @@ public class Puntolimpio {
         System.out.println("4. Pila usada");
         System.out.print("Opcion: ");
 
+        if (!sc.hasNextInt()) {
+            System.out.println("Debe ingresar un numero.");
+            sc.nextLine();
+            return;
+        }
+
         int opcion = sc.nextInt();
+        sc.nextLine();
 
         switch (opcion) {
             case 1:
                 System.out.println("Tipo: Reciclable");
                 System.out.println("Depositar en: Caneca blanca");
                 break;
-
             case 2:
                 System.out.println("Tipo: Organico");
                 System.out.println("Depositar en: Caneca verde");
                 break;
-
             case 3:
                 System.out.println("Tipo: No aprovechable");
                 System.out.println("Depositar en: Caneca negra");
                 break;
-
             case 4:
                 System.out.println("Tipo: Residuo especial");
                 System.out.println("Depositar en: Punto de recoleccion de pilas");
                 break;
-
             default:
                 System.out.println("Opcion no valida.");
         }

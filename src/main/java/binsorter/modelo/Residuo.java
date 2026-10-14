@@ -21,6 +21,6 @@ public class Residuo {
         }
     }
     public boolean validarCategoria(String categoriaIngresada) {
-        return categoria == categoriaIngresada;
+        return categoria != null && categoria.equalsIgnoreCase(categoriaIngresada);
 }
 }
