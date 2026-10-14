@@ -1,20 +1,18 @@
 package binsorter.modelo;
 
 public class Contenedor {
-    private int idContenedor;
     private String tipoResiduo;
-    private String colorCodigo;
     private String capacidadMaxima;
     private double nivelLlenadoActual;
+    private boolean estaLleno;
 
-    public Contenedor(int idContenedor, String tipoResiduo, String colorCodigo, String capacidadMaxima, double nivelLlenadoActual){
-        this.idContenedor = idContenedor;
+    public Contenedor(String tipoResiduo, String capacidadMaxima, double nivelLlenadoActual, boolean estaLleno){
         this.tipoResiduo = tipoResiduo;
-        this.colorCodigo = colorCodigo;
         this.capacidadMaxima = capacidadMaxima;
         this.nivelLlenadoActual = nivelLlenadoActual;
+        this.estaLleno = False;
     }
 
-    public void actualizarNivel(){}
+    public void actualizarNivel(double cantidadKg){}
     public void notificarLlenado(){}
 }
