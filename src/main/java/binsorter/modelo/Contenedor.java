@@ -10,7 +10,7 @@ public class Contenedor {
         this.tipoResiduo = tipoResiduo;
         this.capacidadMaxima = capacidadMaxima;
         this.nivelLlenadoActual = nivelLlenadoActual;
-        this.estaLleno = False;
+        this.estaLleno = false;
     }
 
     public void actualizarNivel(double cantidadKg){}
