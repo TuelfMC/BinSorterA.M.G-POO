@@ -17,9 +17,8 @@ public class Usuario {
 
     }
 
-    public void registrarse(){}
     public void iniciarSesion(){}
     public void cerrarSesion(){}
-    public void editarPerfil(){}
+
     
 }
